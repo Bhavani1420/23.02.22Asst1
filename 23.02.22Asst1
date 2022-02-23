@@ -1,0 +1,25 @@
+l=[]
+n=int(input("enter a number"))
+for i in range(n):
+    x=int(input("enter a number"))
+    l.append(x)
+min=l[0]
+max=l[0]
+for i in range(1,n):
+    if l[i]<min:
+        min=l[i]
+    for i in range(1,n):
+        if l[i]>max:
+            max=l[i]
+print('min',min)
+print('max',max)
+O/P
+enter a number5
+enter a number9
+enter a number8
+enter a number7
+enter a number4
+enter a number3
+min 3
+max 9
+> 
